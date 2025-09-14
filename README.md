@@ -38,3 +38,10 @@ Streamlit app providing the BMS UI. Loads data/models, allows predictions, displ
    - Retrain the models on new data
    - Update predictions with improved accuracy
   
+## Data Pipeline
+- **Simulated data generation** via battery_simulator.py (bootstrap phase).
+- **Preprocessing** with one‑hot encoding for categoricals; physics‑derived total_power_W ensures predictions respond to input changes.
+- **Model training** using AI Models for flight time and battery consumption.
+- **Serialization** via skops for robust cross‑version loading.
+- **UI integration** via Streamlit to demonstrate operator‑facing features.
+  
